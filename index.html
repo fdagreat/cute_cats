@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset='UTF-8'>
+
+<title>Cat Images</title>
+<link rel='stylesheet' href='//css-tricks.com/examples/ViewSourceButton/css/style.css'>
+<link rel='stylesheet' href='//css-tricks.com/examples/ViewSourceButton/css/prettify.css'>
+<style>
+		#source-code { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.8); }
+		#source-code:target { display: block; }
+		#source-code pre { padding: 20px; font: 14px/1.6 Monaco, Courier, MonoSpace; margin: 50px auto; background: rgba(0,0,0,0.8); color: white; width: 80%; height: 80%; overflow: auto; }
+		#source-code pre a, #source-code pre a span { text-decoration: none; color: #00ccff !important; }
+		#x { position: absolute; top: 30px; left: 10%; margin-left: -41px; }
+		.button { background: #00ccff; padding: 10px 20px; color: white; text-decoration: none; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+    
+        img{margin:0px; padding:0px;}
+    .img{max-width:100%;border:3px; margin:0px auto; height:auto; float:none; min-width:200px; min-height:200px; display:block}
+    
+    
+    </style>
+
+
+
 </head>
-<body>
-    Hello
+<body background-img="/bg.gif">
+<div id="page-wrap" align="center">
+    <h1>Happy Birthday Arian 🥳 </h1>
+
+<h1>Click Below to get a Cute Cat image</h1>
+</br>
+<a class="button" href="#source-code" id="view-source" onclick="run()">Cute Cat Finder</a>
+
+<div id="source-code">
+<a href="#" id="x"><img src="https://css-tricks.com/examples/ViewSourceButton/images/x.png" alt="close"></a>
+<img id="image" class="img" src="/bg.gif"> </img>
+</div>
+</div>
 </body>
+
+
+
+<script>
+
+function run() {
+var num = Math.floor(Math.random() *200 + 1)
+
+https://fidebleb.sirv.com/cat_images/cat1.jpeg 
+var location = `https://fidebleb.sirv.com/cat_images/cat${num}.jpeg`
+//var location = `/bg.gif`
+document.getElementById("image").src = location
+
+
+console.log(num)
+console.log(location)   
+
+}
+
+
+// 252 287 84 299 318 281 69
+</script>
+
+
 </html>
