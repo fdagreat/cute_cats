@@ -14,9 +14,11 @@
 		#x { position: absolute; top: 30px; left: 10%; margin-left: -41px; }
 		.button { background: #00ccff; padding: 10px 20px; color: white; text-decoration: none; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
     
-        img{margin:0px; padding:0px;}
+        /* img{margin:0px; padding:0px;}
     .img{max-width:100%;border:3px; margin:0px auto; height:auto; float:none; min-width:200px; min-height:200px; display:block}
-   .h1{color: white;}
+   */
+   
+   .h1{color: white;} 
    .text{color: white;}
     
 
@@ -40,6 +42,11 @@ body {
 
     text {
         color: #ffffff;
+    }
+    img{
+      width: 100%;
+
+      display:block;
     }
     </style>
 
@@ -70,7 +77,7 @@ body {
 function run() {
 var num = Math.floor(Math.random() *200 + 1)
 
-https://fidebleb.sirv.com/cat_images/cat1.jpeg 
+// https://fidebleb.sirv.com/cat_images/cat1.jpeg 
 var location = `https://fidebleb.sirv.com/cat_images/cat${num}.jpeg`
 //var location = `/bg.gif`
 document.getElementById("image").src = location
